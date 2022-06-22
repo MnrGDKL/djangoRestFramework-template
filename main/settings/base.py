@@ -135,6 +135,10 @@ REST_FRAMEWORK = {
     ]
 }
 
+REST_AUTH_SERIALIZERS = {
+    'TOKEN_SERIALIZER': 'users.serializers.CustomTokenSerializer',
+}
+
 LOGGING = {
     "version": 1,
     # is set to True then all loggers from the default configuration will be disabled.
@@ -182,3 +186,4 @@ LOGGING = {
         },
     },
 }
+
